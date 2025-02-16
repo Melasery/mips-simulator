@@ -115,15 +115,20 @@ $31 : 0x004001b0
 │── /src/                  # Source code
 │    ├── sim.c             # Main program
 │    ├── memory.c          # Memory handling
+│    ├── memory.h          # Memory header
 │    ├── loader.c          # File loader
+│    ├── loader.h          # Loader header
 │    ├── interpreter.c     # MIPS instruction execution
+│    ├── interpreter.h     # Interpreter header
 │    ├── global.h          # Global declarations
-│── /examples/              # MIPS test programs
-│    ├── hello_world.s     # Example: prints "Hello World"
-│── /docs/                  # Documentation
-│    ├── README.md         # Main documentation
+│── /examples/hello_world/  # MIPS test programs
+│    ├── hello.s           # Example: prints "Hello World"
+│    ├── libio.s           # I/O library
+│    ├── startup.s         # Startup code
 │── .gitignore              # Ignore compiled binaries
-│── Makefile                # Compilation script
+│── LICENSE                 # Open-source license (optional)
+│── Mars4_5.jar             # MARS simulator
+│── README.md               # Main documentation
 │── assemble_and_run.sh      # Assemble & execute programs
 │── run_mars.sh             # Run with MARS emulator
 ```
